@@ -2,12 +2,25 @@
 import java.util.*;
 
 /**
- *  Description of the Class
- *
- * @author     Your Name Here
- * @created    Month Day, Year
- */
-public class Sorts{
+    * Name of your class: QianDanielPeriod6.java
+    * 
+    * Class includes sorts WITH STEP COUNTERS ADDED IN
+    * 
+    * 
+    * 
+    * 
+    *                   100 Integers        200 Integers        400 Integers        800 Integers
+    * Bubble            23942               95412               399092              1604124
+    *
+    * Selection         1311                2788                7053                15496
+    * 
+    * Insertion         5104                20236               81892               302740
+    * 
+    * 
+    * Considering the fact that I knew bubble sort would be the most inefficient, it came to no 
+    * surprise that it was outperformed by the other sorts.
+    */
+public class QianDanielPeriod6{
   private long steps;
 
   /**
@@ -15,7 +28,7 @@ public class Sorts{
    *
    * @param  list  Description of Parameter
    */
-  public Sorts(){
+  public QianDanielPeriod6(){
     steps = 0;
   }
 
@@ -25,8 +38,8 @@ public class Sorts{
    * @param  list  reference to an array of integers to be sorted
    */
   public void bubbleSort(ArrayList <Integer> list){
-	
-	steps = 0;
+    //replace these lines with your code
+    steps = 0;
   for (int outer = 0; outer < list.size() - 1; outer++){
     for (int inner = 0; inner < list.size()-outer-1; inner++){
         steps += 3;//count one compare and 2 gets
@@ -45,23 +58,25 @@ public class Sorts{
    *
    * @param  list  reference to an array of integers to be sorted
    */
-  public void selectionSort(ArrayList <Comparable> list){
-	int min, temp;
-	int steps = 0;
+  public void selectionSort(ArrayList <Integer> list){
+    int min, temp;
+    steps = 0;
   for (int outer = 0; outer < list.size() - 1; outer++){
     min = outer;
+    
     for (int inner = outer + 1; inner < list.size(); inner++){
-      if (list.get(inner) < list.get(min)) {
-	 steps += 2;
+        
+      if (list.get(inner).compareTo(list.get(min)) > 0) {
+          steps += 3;
         min = inner; // a new smallest item is found
       }
     }
     //swap list[outer] & list[min]
-	  steps += 4;
+    steps += 4;
     temp = list.get(outer);
     list.set(outer, list.get(min));
     list.set(min, temp);
-	  
+    
   }
   }
 
@@ -70,8 +85,8 @@ public class Sorts{
    *
    * @param  list  reference to an array of integers to be sorted
    */
-  public void insertionSort(ArrayList <Comparable> list){
-	 int steps = 0;
+  public void insertionSort(ArrayList <Integer> list){
+      steps = 0;
      for (int outer = 1; outer < list.size(); outer++){
     int position = outer;
     int key = list.get(position);
@@ -99,11 +114,11 @@ public class Sorts{
    * @param  mid    midpoint index of range of values to be sorted
    * @param  last   last index of range of values to be sorted
    */
-  private void merge(ArrayList <Comparable> a, int first, int mid, int last){
-	//replace these lines with your code
-	System.out.println();
-	System.out.println("Merge");
-	System.out.println();
+  private void merge(ArrayList <Integer> a, int first, int mid, int last){
+    //replace these lines with your code
+    System.out.println();
+    System.out.println("Merge");
+    System.out.println();
 
   }
 
@@ -114,11 +129,11 @@ public class Sorts{
    * @param  first  starting index of range of values to be sorted
    * @param  last   ending index of range of values to be sorted
    */
-  public void mergeSort(ArrayList <Comparable> a, int first, int last){
-	//replace these lines with your code
-	System.out.println();
-	System.out.println("Merge Sort");
-	System.out.println();
+  public void mergeSort(ArrayList <Integer> a, int first, int last){
+    //replace these lines with your code
+    System.out.println();
+    System.out.println("Merge Sort");
+    System.out.println();
   }
 
  
@@ -148,9 +163,9 @@ public class Sorts{
    * @param  b     index of integer to be swapped
    */
   public void swap(ArrayList <Comparable> list, int a, int b){
-	//replace these lines with your code
-	System.out.println();
-	System.out.println("Swap");
-	System.out.println();
+    //replace these lines with your code
+    System.out.println();
+    System.out.println("Swap");
+    System.out.println();
   }
 }
