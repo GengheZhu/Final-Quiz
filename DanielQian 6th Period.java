@@ -12,14 +12,14 @@ import java.util.*;
     *                   100 Integers        200 Integers        400 Integers        800 Integers
     * Bubble            23942               95412               399092              1604124
     *
-    * Selection         1311                2788                7053                15496
+    * Selection         15386                60786              241265                963596
     * 
-    * Insertion         7806                30584               113073               480263
+    * Insertion         7674                30584               113073               480263
     * 
     * 
     * Considering the fact that I knew bubble sort would be the most inefficient, it came to no 
     * surprise that it was outperformed by the other sorts. But 1604124 sure is a lot of steps. Definitely do not want to use Bubble
-    * sort for those exceptionally large data sorts.
+    * sort for those exceptionally large data sorts. Insertion was the best so this sort would be best for sorting large data sets.
     */
 public class QianDanielPeriod6{
   private long steps;
