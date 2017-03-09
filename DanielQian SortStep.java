@@ -11,8 +11,8 @@ import java.util.*;
  */
 public class SortStep{
   private Scanner console;
-  private ArrayList <Comparable> myArray;
-  private Sorts mySorts;
+  private ArrayList <Integer> myArray;
+  private QianDanielPeriod6 mySorts;
   private String listType;
 
   /**
@@ -20,7 +20,7 @@ public class SortStep{
    */
   public SortStep(){
     console = new Scanner(System.in);
-    mySorts = new Sorts();
+    mySorts = new QianDanielPeriod6();
     myArray = null;
     listType = "Integer";
   }
@@ -108,7 +108,7 @@ public class SortStep{
     int largestInt = console.nextInt();
     
     Random randGen = new Random();
-    myArray = new ArrayList <Comparable>();
+    myArray = new ArrayList <Integer>();
 
     for (int loop = 0; loop < numInts; loop++){
       Integer x = new Integer(randGen.nextInt(largestInt) + 1);
@@ -124,13 +124,13 @@ public class SortStep{
    * @param  largestInt  largest possible random integer to create
    */
   private void fillArrayWithStrings(){
-    myArray = new ArrayList <Comparable>();
-    myArray.add("eat");
-    myArray.add("steaks");
-    myArray.add("juicy");
-    myArray.add("huge");
-    myArray.add("dogs");
-    myArray.add("big");
+    myArray = new ArrayList <Integer>();
+    myArray.add(new Integer("eat"));
+    myArray.add(new Integer("steaks"));
+    myArray.add(new Integer("juicy"));
+    myArray.add(new Integer("huge"));
+    myArray.add(new Integer("dogs"));
+    myArray.add(new Integer("big"));
   }
 
   /**
@@ -162,4 +162,3 @@ public class SortStep{
 
   
 }
-
