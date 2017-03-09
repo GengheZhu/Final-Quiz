@@ -10,11 +10,11 @@ public class Rengarajan-Anirudh-Period-1
     * 
     * 
     *                   100 Integers        200 Integers        400 Integers        800 Integers
-    * Bubble			20136				79920				316828				1274028
+    * Bubble		20136		    79920		316828		    1274028
     *
-    * Selection			10296				40596				161196				642396
+    * Selection		10296		    40596		161196		    642396
     * 
-    * Insertion			5039				19489				83175				329393
+    * Insertion		5039		    19489		83175		    329393
     * 
     * 
     * Write a 1-2 sentence write-up about your observations.
