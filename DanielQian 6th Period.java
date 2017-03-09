@@ -24,15 +24,15 @@ public class Sorts{
    *
    * @param  list  reference to an array of integers to be sorted
    */
-  public void bubbleSort(ArrayList <Comparable> list){
-	//replace these lines with your code
+  public void bubbleSort(ArrayList <Integer> list){
+	
 	steps = 0;
   for (int outer = 0; outer < list.size() - 1; outer++){
     for (int inner = 0; inner < list.size()-outer-1; inner++){
         steps += 3;//count one compare and 2 gets
         if (list.get(inner).compareTo(list.get(inner + 1)) > 0){
            steps += 4;//count 2 gets and 2 sets
-           Comparable temp = list.get(inner);
+           Integer temp = list.get(inner);
            list.set(inner,list.get(inner + 1));
            list.set(inner + 1,temp);
         }
@@ -46,10 +46,23 @@ public class Sorts{
    * @param  list  reference to an array of integers to be sorted
    */
   public void selectionSort(ArrayList <Comparable> list){
-	//replace these lines with your code
-	System.out.println();
-	System.out.println("Selection Sort");
-	System.out.println();
+	int min, temp;
+	int steps = 0;
+  for (int outer = 0; outer < list.size() - 1; outer++){
+    min = outer;
+    for (int inner = outer + 1; inner < list.size(); inner++){
+      if (list.get(inner) < list.get(min)) {
+	 steps += 2;
+        min = inner; // a new smallest item is found
+      }
+    }
+    //swap list[outer] & list[min]
+	  steps += 4;
+    temp = list.get(outer);
+    list.set(outer, list.get(min));
+    list.set(min, temp);
+	  
+  }
   }
 
   /**
@@ -58,10 +71,20 @@ public class Sorts{
    * @param  list  reference to an array of integers to be sorted
    */
   public void insertionSort(ArrayList <Comparable> list){
-	//replace these lines with your code
-	System.out.println();
-	System.out.println("Insertion Sort");
-	System.out.println();
+	 int steps = 0;
+     for (int outer = 1; outer < list.size(); outer++){
+    int position = outer;
+    int key = list.get(position);
+    steps+=1;
+    // Shift larger values to the right
+    while (position > 0 && list.get(position - 1) > key){
+      list.set(position, list.get(position - 1));
+      steps += 2;
+      position--;
+    }
+    list.set(position, key);
+    steps += 1;
+  }
   }
 
 
