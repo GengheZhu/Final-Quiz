@@ -2,7 +2,7 @@
 /**
  * Please submit your Sorts lab in the following form
  */
-public class Jiang-Oliver-Period-4.java
+public class JiangOliverPeriod4
 {
     /**
     *                   100 Integers        200 Integers        400 Integers        800 Integers
