@@ -14,10 +14,9 @@ import java.util.*;
     * 
     * Insertion           5374                20500               83462               330540
     * 
+    * The Insertion method is the fastest sorting algorithm out of them all. I noticed
+    * that the other methods are slower because they take more steps to complete.
     * 
-    *  The bubble sort uses the highest number of steps whereas the insertion sort uses the least.
-    *  When the number of integers that are sorted doubles in number, the number of steps quadruples
-    *  since these are quadratic.
     *
     */
 public class Dhar_Pranav_Period_6 
