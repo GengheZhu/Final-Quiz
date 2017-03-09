@@ -18,7 +18,8 @@ import java.util.*;
     * 
     * 
     * Considering the fact that I knew bubble sort would be the most inefficient, it came to no 
-    * surprise that it was outperformed by the other sorts.
+    * surprise that it was outperformed by the other sorts. But 1604124 sure is a lot of steps. Definitely do not want to use Bubble
+    * sort for those exceptionally large data sorts.
     */
 public class QianDanielPeriod6{
   private long steps;
