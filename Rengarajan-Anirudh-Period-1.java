@@ -71,7 +71,6 @@ public class Rengarajan-Anirudh-Period-1
 		          steps+=5;
 		      }
 	  }
-
 	  /**
 	   *  Insertion Sort Algorithm
 	   *
