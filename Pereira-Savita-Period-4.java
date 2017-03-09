@@ -1,6 +1,6 @@
 import java.util.*;
 /**
-    * Pereira-Savita-Period-4.java
+    * PereiraSavita4.java
     * 
     * Class includes sorts WITH STEP COUNTERS ADDED IN
     * 
