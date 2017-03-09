@@ -5,6 +5,15 @@ import java.util.*;
  *
  * @author     Anjali Kantharuban
  * @created    March 8, 2017
+ *
+ *                   100 Integers        200 Integers        400 Integers        800 Integers
+ * Bubble            29207               97142               412239              1993135
+ *
+ * Selection         16425               61182               230876              923396
+ * 
+ * Insertion         5251                22830               82383               338273
+ * 
+ * Conlusion: Bubble sorting takes significantly more resources and time. The other two work better, with insertion being the most efficient.
  */
 public class AnjaliSorts{
   private long steps;
