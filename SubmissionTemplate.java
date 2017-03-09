@@ -28,7 +28,7 @@ import java.util.*;
  *baby use the key board
  *Kinky with the data ata,
  *Baby write me java java
- *Codeuhh, program niggaaa (sorry sos)
+ *Codeuhh, program writeuhh (sorry sos)
  *
  */
 public class WeiChrisPeriod6
