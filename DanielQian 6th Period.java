@@ -95,7 +95,7 @@ public class QianDanielPeriod6{
     // Shift larger values to the right
     while (position > 0 && list.get(position - 1) > key){
       list.set(position, list.get(position - 1));
-      steps += 2;
+      steps += 3;
       position--;
     }
     list.set(position, key);
