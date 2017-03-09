@@ -14,6 +14,11 @@ import java.util.*;
  * Selection            15246               60496               240996              961966
  * 
  * Insertion            9022                40934               164678              641578
+ * 
+ * Write Up:
+ * Insertion sort is the most efficient of the sorts, continually using the least amount of
+ * steps.  Bubble sort, due to its need to parse through the entirety of data pieces present,
+ * takes the most steps.
  */
 public class PlattMaxPeriod4
  {
