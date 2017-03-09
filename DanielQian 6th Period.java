@@ -26,9 +26,18 @@ public class Sorts{
    */
   public void bubbleSort(ArrayList <Comparable> list){
 	//replace these lines with your code
-	System.out.println();
-	System.out.println("Bubble Sort");
-	System.out.println();
+	steps = 0;
+  for (int outer = 0; outer < list.size() - 1; outer++){
+    for (int inner = 0; inner < list.size()-outer-1; inner++){
+        steps += 3;//count one compare and 2 gets
+        if (list.get(inner).compareTo(list.get(inner + 1)) > 0){
+           steps += 4;//count 2 gets and 2 sets
+           Comparable temp = list.get(inner);
+           list.set(inner,list.get(inner + 1));
+           list.set(inner + 1,temp);
+        }
+    }
+  }
   }
 
   /**
