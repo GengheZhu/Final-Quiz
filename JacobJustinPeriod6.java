@@ -59,7 +59,7 @@ public class JacobJustinPeriod6{
           }
         }
         steps+=4;
-        //swap list[outer] & list[min]
+    
         temp = list.get(outer);
         list.set(outer, list.get(min));
         list.set(min, temp);
