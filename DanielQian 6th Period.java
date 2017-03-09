@@ -14,7 +14,7 @@ import java.util.*;
     *
     * Selection         1311                2788                7053                15496
     * 
-    * Insertion         5104                20236               81892               302740
+    * Insertion         7806                30584               113073               480263
     * 
     * 
     * Considering the fact that I knew bubble sort would be the most inefficient, it came to no 
