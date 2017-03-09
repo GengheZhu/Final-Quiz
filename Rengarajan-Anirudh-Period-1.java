@@ -6,10 +6,6 @@ import java.util.ArrayList;
 public class Rengarajan-Anirudh-Period-1
 {
     /**
-    * Name of your class: LastName-FirstName-Period-#.java
-    * 
-    * Class includes sorts WITH STEP COUNTERS ADDED IN
-    * 
     * Following table should be filled out AT TOP OF CLASS:
     * 
     * 
@@ -22,10 +18,15 @@ public class Rengarajan-Anirudh-Period-1
     * 
     * 
     * Write a 1-2 sentence write-up about your observations.
+    * For every sort, I made the amount of integers generated equal to the amount of integers in the list.
+    * As a result, I noticed the approximate pattern where Insertion is half of Selection which is half of Bubble. Also, my
+    * 4x jump from 100-200 integers was most likely because I doubled the amount of integers stored in my array, which
+    * quadrupled the steps.
+    * 
     */
 	
 	/**
-	   *  Description of the Method
+	   *  Bubble Sort Algorithm
 	   *
 	   * @param  list  reference to an array of integers to be sorted
 	   */
@@ -51,7 +52,7 @@ public class Rengarajan-Anirudh-Period-1
 	  }
 
 	  /**
-	   *  Description of the Method
+	   *  Selection Sort Algorithm
 	   *
 	   * @param  list  reference to an array of integers to be sorted
 	   */
@@ -73,7 +74,7 @@ public class Rengarajan-Anirudh-Period-1
 	  }
 
 	  /**
-	   *  Description of the Method
+	   *  Insertion Sort Algorithm
 	   *
 	   * @param  list  reference to an array of integers to be sorted
 	   */
