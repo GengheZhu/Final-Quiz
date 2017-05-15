@@ -1,3 +1,4 @@
+
 import java.util.*;
 import javax.swing.*;
 import java.awt.*;
@@ -5,66 +6,45 @@ public class Test extends JFrame
 {
     private JPanel panel;
     private JLabel label1;
+    private JPanel panel1;
     public Test() {
-        
-        panel = new JPanel();
-        JButton button1 = new JButton("A Button");
-        //button1.setBounds(150, 200, 150, 275);
-        panel.add(button1);
-        
         label1 = new JLabel();
+        panel = new JPanel();
+        panel1 = new JPanel();
         label1.setText("Question 1");
+        panel1.add(label1);
+        Container c = this.getContentPane();
+        c.setLayout(new GridBagLayout());
+        GridBagConstraints c1 = new GridBagConstraints();
+        c1.gridx = 0;
+        c1.gridy = 0;
+        add(panel1,c1);     
+
+        c1.gridx = 300;
+        c1.gridy = 300;
         
-        panel.add(label1);
+        JButton button1 = new JButton("A Button");
+        
+        //button1.setBounds(150, 200, 150, 275);
+        panel.add(button1, c1);
+        
+       
         //label1.setLocation(0, 150);
-        panel.setLayout(new FlowLayout(FlowLayout.LEFT));
-        this.add(panel);
+        //panel.setLayout(new FlowLayout(FlowLayout.LEFT));
+        add(panel);
         
+     
         //this.setLocationRelativeTo(null);
         //this.setUndecorated(true);
-        this.pack();
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(new Dimension(1000, 1000));
-        this.setVisible(true);
+        //this.pack();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(new Dimension(1000, 1000));
+        setVisible(true);
     }
     
     public static void main(String[] args) {
         new Test();
-        /*
-        JFrame this = new JFrame("Tester");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 600);
-        frame.setLayout(null);
-        //JButton button1 = new JButton("A Button");
-        //button1.setBounds(50, 100, 50, 75);
-        //frame.add(button1);
-        JPanel panel = new JPanel();
-        JLabel label1 = new JLabel("Label Test");
-        //label1.setText("Please Work");
-        panel.add(label1);
-        panel.setLocation(300, 400);
-        //panel.setVisible(true);
-        frame.add(panel);
-        //label1.setLocation(300, 400);
-        //frame.add(label1);
-        frame.setVisible(true);
-        */
-        //JFrame frame = new JFrame();
-        //frame.setSize(new Dimension(1000, 1000));
-        //JPanel panel = new JPanel();
-        //JButton button1 = new JButton("A Button");
-        //button1.setBounds(150, 200, 150, 275);
-        //panel.add(button1);
-        //JLabel label1 = new JLabel();
-        //label1.setText("asdfasdf");
-        
-        //panel.add(label1);
-        //label1.setLocation(0, 150);
-        //frame.add(panel);
-        
-        //frame.setLocationRelativeTo(null);
-        //frame.setUndecorated(true);
-        //frame.setVisible(true);
+
         
     }
 }
