@@ -2,6 +2,7 @@ import java.awt.*;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 public class Quiz {
     final static boolean shouldFill = true;
     final static boolean shouldWeightX = true;
@@ -64,12 +65,25 @@ public class Quiz {
     c.fill = GridBagConstraints.CENTER;
     c.ipadx = 50;       //reset to default
     c.weighty = 1.0;   //request any extra vertical space
+    //c.anchor = GridBagConstraints.PAGE_END; //bottom of space
+    c.insets = new Insets(10,0,0,0);  //top padding
+    c.gridx = 1;       //aligned with button 2
+    c.gridwidth = 2;   //2 columns wide
+    c.gridy = 3;       //third row
+    pane.add(label, c);
+    
+    
+    label = new JLabel(new ImageIcon("C:/Users/fhsplab/Desktop/Final-Quiz/sleep1.png"));
+    c.fill = GridBagConstraints.CENTER;
+    c.ipadx = 0;       //reset to default
+    c.weighty = 1.0;   //request any extra vertical space
     c.anchor = GridBagConstraints.PAGE_END; //bottom of space
     c.insets = new Insets(10,0,0,0);  //top padding
     c.gridx = 1;       //aligned with button 2
     c.gridwidth = 2;   //2 columns wide
-    c.gridy = 2;       //third row
+    c.gridy = 3;       //third row
     pane.add(label, c);
+    //frame.add(new JLabel(new ImageIcon("C:/Users/fhsplab/Desktop/Final-Quiz/Shrek2.png")));
     }
  
     /**
@@ -84,7 +98,7 @@ public class Quiz {
  
         //Set up the content pane.
         addComponentsToPane(frame.getContentPane());
- 
+        
         //Display the window.
         //frame.pack();
         frame.setSize(new Dimension(500,500));
